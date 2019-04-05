@@ -1,0 +1,24 @@
+.box__area {
+    width: 500pt;
+    margin: auto;
+}
+
+p.text-right {
+    text-align: right;
+}
+.text-italic{
+    font-style: italic;
+}
+.date-right{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.bootom-content{
+    margin-top: 350px;
+}
+html{
+    font-size: 11px;
+}
+.border{
+    border: 1px solid;
+}

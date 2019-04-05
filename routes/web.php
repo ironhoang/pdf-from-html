@@ -2,6 +2,7 @@
 
 Route::group([], function () {
     Route::get('/', 'User\IndexController@index')->name('index');
+    Route::post('/', 'User\IndexController@pdf1')->name('index.post');
 
     Route::group(['middleware' => ['user.guest']], function () {
         Route::get('signin', 'User\AuthController@getSignIn')->name('signIn.get');

@@ -194,6 +194,8 @@ return [
         LaravelRocket\Foundation\Providers\ProxyServiceProvider::class,
         LaravelRocket\ServiceAuthentication\Providers\ServiceProvider::class,
 
+        Barryvdh\DomPDF\ServiceProvider::class,
+
     ], $additionalProviders),
 
     /*
@@ -254,6 +256,7 @@ return [
         'RedirectHelper'   => LaravelRocket\Foundation\Facades\RedirectHelper::class,
         'CountryHelper'    => LaravelRocket\Foundation\Facades\CountryHelper::class,
         'FileHelper'       => LaravelRocket\Foundation\Facades\FileHelper::class,
+        'PDF' => Barryvdh\DomPDF\Facade::class,
     ],
 
 ];
