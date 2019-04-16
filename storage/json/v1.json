@@ -1,0 +1,87 @@
+{
+    "input_data": [
+    {
+      "x": 121, "y": 49, "text": "00000000 00000", "font_size": "14", "is_bold": true, "fill_color":"blue", "width": 50
+    },
+    {
+      "x": 336, "y": 49, "text": "7372D", "font_size": "14", "is_bold": true
+    },
+    {
+      "x": 434, "y": 49, "text": "Kelsey's Neighbourhood Bar & Grill", "font_size": "14", "is_bold": true
+    },
+
+    {
+      "x": 20, "y": 109, "text": "Description", "font_size": "12", "is_bold": true
+    },
+    {
+      "x": 140, "y": 109, "text": "Hours", "font_size": "12", "is_bold": true
+    },
+    {
+      "x": 201, "y": 109, "text": "Rate", "font_size": "12", "is_bold": true
+    },
+    {
+      "x": 249, "y": 109, "text": "Amount", "font_size": "12", "is_bold": true
+    },
+
+    {
+      "x": 17, "y": 135, "text": "Weighting", "font_size": "12"
+    },
+    {
+      "x": 144, "y": 135, "text": "40", "font_size": "12"
+    },
+    {
+      "x": 196, "y": 135, "text": "100.00", "font_size": "12"
+    },
+    {
+      "x": 248, "y": 135, "text": "4,000.00", "font_size": "12"
+    },
+
+    {
+      "x": 17, "y": 149, "text": "Benefits allowance", "font_size": "12"
+    },
+    {
+      "x": 196, "y": 149, "text": "200.00", "font_size": "12"
+    },
+    {
+      "x": 257, "y": 149, "text": "200.00", "font_size": "12"
+    },
+
+    {
+      "x": 17, "y": 165, "text": "Sleeping in", "font_size": "12"
+    },
+    {
+      "x": 196, "y": 165, "text": "120.00", "font_size": "12"
+    },
+    {
+      "x": 257, "y": 165, "text": "120.00", "font_size": "12"
+    },
+
+    {
+      "x": 17, "y": 181, "text": "Leadership", "font_size": "12"
+    },
+    {
+      "x": 202, "y": 181, "text": "50.00", "font_size": "12"
+    },
+    {
+      "x": 264, "y": 181, "text": "15.00", "font_size": "12"
+    },
+
+    {
+      "x": 256, "y": 263, "text": "4,370.00", "font_size": "12", "is_bold": true
+    },
+
+      {
+        "x": 74, "y": 368, "text": "Max barker", "font_size": "12", "is_bold": true
+      },
+      {
+        "x": 74, "y": 384, "text": "7 Iffley Road", "font_size": "12", "is_bold": false
+      },
+      {
+        "x": 74, "y": 401, "text": "BROADWAY", "font_size": "12", "is_bold": false
+      },
+      {
+        "x": 74, "y": 418, "text": "SA17 8QQ", "font_size": "12", "is_bold": false
+      }
+  ]
+
+}

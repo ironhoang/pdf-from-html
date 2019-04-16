@@ -26,6 +26,8 @@ bower_components
 !.elasticbeanstalk/*.global.yml
 
 storage/debugbar/
+storage/json
+storage/images
 
 /.env.production
 

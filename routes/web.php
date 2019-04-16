@@ -2,6 +2,8 @@
 
 Route::group([], function () {
     Route::get('/', 'User\IndexController@index')->name('index');
+    Route::get('/image', 'User\IndexController@getImage')->name('image');
+    Route::post('/image', 'User\IndexController@postImage')->name('post.image');
     Route::post('/', 'User\IndexController@pdf1')->name('index.post');
 
     Route::group(['middleware' => ['user.guest']], function () {
