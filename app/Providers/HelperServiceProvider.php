@@ -22,5 +22,10 @@ class HelperServiceProvider extends ServiceProvider
     public function register()
     {
         /* NEW BINDING */
+
+        $this->app->singleton(
+            \App\Helpers\StringHelperInterface::class,
+            \App\Helpers\Production\StringHelper::class
+        );
     }
 }

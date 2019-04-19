@@ -250,13 +250,14 @@ return [
         'LocaleHelper'     => LaravelRocket\Foundation\Facades\LocaleHelper::class,
         'URLHelper'        => LaravelRocket\Foundation\Facades\URLHelper::class,
         'CollectionHelper' => LaravelRocket\Foundation\Facades\CollectionHelper::class,
-        'StringHelper'     => LaravelRocket\Foundation\Facades\StringHelper::class,
+//        'StringHelper'     => LaravelRocket\Foundation\Facades\StringHelper::class,
         'PaginationHelper' => LaravelRocket\Foundation\Facades\PaginationHelper::class,
         'TypeHelper'       => LaravelRocket\Foundation\Facades\TypeHelper::class,
         'RedirectHelper'   => LaravelRocket\Foundation\Facades\RedirectHelper::class,
         'CountryHelper'    => LaravelRocket\Foundation\Facades\CountryHelper::class,
         'FileHelper'       => LaravelRocket\Foundation\Facades\FileHelper::class,
-        'PDF' => Barryvdh\DomPDF\Facade::class,
+        'PDF'              => Barryvdh\DomPDF\Facade::class,
+        'StringHelper'     => App\Facades\StringHelper::class,
     ],
 
 ];
