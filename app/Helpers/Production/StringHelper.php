@@ -3,6 +3,7 @@
 namespace App\Helpers\Production;
 
 use App\Helpers\StringHelperInterface;
+use League\Pipeline\Pipeline;
 
 class StringHelper extends \LaravelRocket\Foundation\Helpers\Production\StringHelper implements StringHelperInterface
 {

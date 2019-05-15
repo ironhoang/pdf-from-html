@@ -16,6 +16,6 @@ class IndexController extends Controller
     {
         $stats = $request->get('status');
 
-        return Status::ok()->response();
+        return Status::ok("Hello I'm iron")->response();
     }
 }

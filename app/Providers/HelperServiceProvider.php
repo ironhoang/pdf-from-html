@@ -27,5 +27,9 @@ class HelperServiceProvider extends ServiceProvider
             \App\Helpers\StringHelperInterface::class,
             \App\Helpers\Production\StringHelper::class
         );
+        $this->app->singleton(
+            \App\PipeLine\DataPipeLineInterface::class,
+            \App\PipeLine\Action\DataPipeLine::class
+        );
     }
 }

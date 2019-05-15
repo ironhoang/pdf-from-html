@@ -2,8 +2,11 @@
 
 namespace App\Console\Commands;
 
+use App\PipeLine\Action\DataPipeLine;
+use App\PipeLine\DataPipeLineInterface;
 use Illuminate\Console\Command;
 use LaravelRocket\Foundation\Services\ImageServiceInterface;
+use League\Pipeline\Pipeline;
 use PDF;
 
 class MakePDF  extends Command
@@ -25,18 +28,25 @@ class MakePDF  extends Command
      * @var ImageServiceInterface
      */
     private $imageService;
+    /**
+     * @var DataPipeLineInterface
+     */
+    private $dataPipeLine;
 
     /**
      * Create a new command instance.
      *
      * @param ImageServiceInterface $imageService
+     * @param DataPipeLineInterface $dataPipeLine
      */
     public function __construct(
-        ImageServiceInterface $imageService
+        ImageServiceInterface $imageService,
+        DataPipeLineInterface $dataPipeLine
     )
     {
         parent::__construct();
         $this->imageService = $imageService;
+        $this->dataPipeLine = $dataPipeLine;
     }
 
     /**
@@ -46,6 +56,9 @@ class MakePDF  extends Command
      */
     public function handle()
     {
+        $pipeline = (new Pipeline)
+            ->pipe($this->dataPipeLine);
+
         $path = storage_path('images/original');
         $files = array_values(array_filter(scandir($path), function($file) use ($path) {
             return !is_dir($path . '/' . $file);
@@ -60,8 +73,8 @@ class MakePDF  extends Command
 
             $json = file_get_contents(storage_path('json/'.$fileInfo[0].'.json'));
 
-
             $jsonData = json_decode($json,true);
+            $pipeline->process($jsonData);
             $inputData = $jsonData['input_data'];
 
             $this->imageService->annotateImageByPath(storage_path('images/original/'.$file), $inputData, $file);
